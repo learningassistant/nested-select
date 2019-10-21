@@ -56,6 +56,109 @@ const data = [
       }
     ]
   },
+  {
+    name: "1 Deep",
+    id: "1-deep-id",
+    children: [
+      {
+        name: "Child",
+        id: "1-deep-child-id",
+        children: []
+      },
+    ],
+  },
+  {
+    name: "2 Deep",
+    id: "2-deep-id",
+    children: [
+      {
+        name: "level 2",
+        id: "2-deep-level-2-id",
+        children: [
+          {
+            name: "level 3",
+            id: "2-deep-level-3-id",
+            children: []
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "3 Deep",
+    id: "3-deep-id",
+    children: [
+      {
+        name: "level 2",
+        id: "3-deep-level-2-id",
+        children: [
+          {
+            name: "level 3",
+            id: "3-deep-level-3-id",
+            children: [
+              {
+                name: "level 3",
+                id: "3-deep-level-3-id",
+                children: []
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "4 Deep",
+    id: "4-deep-id",
+    children: [
+      {
+        name: "level 2",
+        id: "4-deep-level-2-id",
+        children: [
+          {
+            name: "level 3",
+            id: "4-deep-level-3-id",
+            children: [
+              {
+                name: "level 4",
+                id: "4-deep-level-4-id",
+                children: []
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "5 Deep",
+    id: "5-deep-id",
+    children: [
+      {
+        name: "level 2",
+        id: "5-deep-level-2-id",
+        children: [
+          {
+            name: "level 3",
+            id: "5-deep-level-3-id",
+            children: [
+              {
+                name: "level 4",
+                id: "5-deep-level-4-id",
+                children: [
+                  {
+                    name: "level 5",
+                    id: "5-deep-level-5-id",
+                    children: []
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  }
 ]
 
 const OptionsList = ({ options, selectedOptions, expandedOptions, onChange }) => {
@@ -204,13 +307,19 @@ class App extends React.Component {
     console.table(JSON.stringify(this.state.selectedOptions));
     return (
       <div className="App">
-        <h1> Task Wizard </h1>
-        <OptionsList 
-          options={data}
-          onChange={(selectedOptions, expandedOptions) => this.setState({selectedOptions, expandedOptions})}
-          selectedOptions={ this.state.selectedOptions } 
-          expandedOptions={ this.state.expandedOptions } 
-        />
+        <div style={{float: 'left', width: '60%'}}> {/* Quick wrapper to show the component and data object */}
+          <h1> Task Wizard </h1>
+          <OptionsList 
+            options={data}
+            onChange={(selectedOptions, expandedOptions) => this.setState({selectedOptions, expandedOptions})}
+            selectedOptions={ this.state.selectedOptions } 
+            expandedOptions={ this.state.expandedOptions } 
+          />
+        </div>
+        <div style={{float: 'right'}}>
+          <h4>JS Data Object</h4>
+          <pre>{JSON.stringify(data, null, 1)}</pre>
+        </div>
       </div>
     );
   }
