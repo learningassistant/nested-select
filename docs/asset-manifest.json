@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/nested-select/static/css/main.e10af059.chunk.css",
+    "main.js": "/nested-select/static/js/main.09af4c9a.chunk.js",
+    "main.js.map": "/nested-select/static/js/main.09af4c9a.chunk.js.map",
+    "runtime-main.js": "/nested-select/static/js/runtime-main.279794e7.js",
+    "runtime-main.js.map": "/nested-select/static/js/runtime-main.279794e7.js.map",
+    "static/js/2.be40a915.chunk.js": "/nested-select/static/js/2.be40a915.chunk.js",
+    "static/js/2.be40a915.chunk.js.map": "/nested-select/static/js/2.be40a915.chunk.js.map",
+    "index.html": "/nested-select/index.html",
+    "precache-manifest.97ab0f818aff057e5eebe3fb21873494.js": "/nested-select/precache-manifest.97ab0f818aff057e5eebe3fb21873494.js",
+    "service-worker.js": "/nested-select/service-worker.js",
+    "static/css/main.e10af059.chunk.css.map": "/nested-select/static/css/main.e10af059.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.279794e7.js",
+    "static/js/2.be40a915.chunk.js",
+    "static/css/main.e10af059.chunk.css",
+    "static/js/main.09af4c9a.chunk.js"
+  ]
+}
